@@ -7,7 +7,7 @@ let numero: number = 23;
 // STRING
 const sobrenome: string = 'Vida loka'
 
-const nomeCompleto  = fullName(nome, sobrenome);
+const nomeCompleto = fullName(nome, sobrenome);
 console.log(nomeCompleto)
 console.log(numero)
 
@@ -60,4 +60,46 @@ function letters(a: string, b: string, c: string): void {
 
 // RETORNO DE UMA FUNÇÃO
 
+function imparNumbers(a: number[]): number {
+  return a[5]
+}
 
+// OBJETOS
+
+interface Coord {
+  x: number, y: number
+}
+
+function Coordenadas(coord: Coord): void {
+  console.log(coord.x)
+  console.log(coord.y)
+}
+
+const objCoord: Coord = { x: 10, y: -5 }
+
+Coordenadas(objCoord)
+
+// ARGUMENTOS OPICIONAIS
+function minhasIniciais(a: string, b: string, c?: string, d?: string) {
+  console.log(`Minhas iniciais são: ${a} ${b} ${c} ${d}`)
+}
+
+minhasIniciais('J', 'U')
+
+// UNION TYPES
+let cpf: number | string
+cpf = 12345678910
+cpf = '123.456.789-10'
+
+let userApi: string[] | number[] =  []
+userApi = [12345, 123213]
+userApi = ['Hemerson', 'Vida Loka']
+
+// LITERALS TYPES
+let teste: 'testando' = 'testando'
+let n: 1 = 1
+console.log(teste)
+
+let x = 10
+x = 0b1010;
+console.log(x)
