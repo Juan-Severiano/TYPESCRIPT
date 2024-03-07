@@ -22,7 +22,7 @@ function fullName(firstName: string, lastName: string): string {
 
 // ARRAYS
 
-const myArray: number[] = [1, 2, 3, 4, 5, 6]
+const myArray: number[] = [1, 2, 3, 4, 5, 2]
 console.log(myArray[3])
 
 const impares: Array<number> = [1, 3, 5, 7]
@@ -33,7 +33,7 @@ let aluno: any = 'Aline'
 aluno = 2
 aluno = true
 
-const myTrash: any[] = [1, 4.6, 'casinha', false, [1, 2, 3]]
+const myTrash: any[] = [1, 4.6, 'camisinha', false, [1, 2, 3]]
 
 const arrArr: number[][] = [
   [1, 2, 3, 4, 5],
@@ -102,4 +102,4 @@ console.log(teste)
 
 let x = 10
 x = 0b1010;
-console.log(x)
+console.log(nome)
